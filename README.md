@@ -1,7 +1,7 @@
 # react_boilerplate
 A simple react boilerplate
 
-clone repository
+Clone repository
 
 npm install
 
