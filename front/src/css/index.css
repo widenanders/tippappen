@@ -1,0 +1,131 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 12px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.season-selector {
+  display: flex;
+  align-items: center;
+}
+
+.season-selector select {
+  margin-left: 12px;
+}
+
+.flex-column {
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hej {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 30%;
+  margin-bottom: 30px;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .hej {
+    flex: 1 0 48%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hej {
+    flex: 1 0 auto;
+    margin: 0 12px 32px 12px;
+  }
+}
+
+.user-name {
+  width: 100%;
+  font-weight: bold;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.user-table-row:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.user-table-team-name {
+  text-transform: capitalize;
+}
+
+.user-table-team-logo {
+  text-align: center;
+}
+
+.user-table-team-logo img {
+  width: 50px;
+  height: 30px;
+  margin: 10px 0;
+  text-align: center;
+  object-fit: contain;
+}
+
+#loader {
+  align-items: center;
+  background: #00000070;
+  border-radius: 5em;
+  color: white;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  left: 50%;
+  padding: 20px 40px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  margin-right: 18px;
+  border: 6px solid white;
+  height: 24px;
+  width: 24px;
+  border-radius: 5em;
+  border-style: inset;
+  animation-name: example;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
